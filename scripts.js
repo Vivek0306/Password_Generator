@@ -45,11 +45,14 @@ let generatePassword = (
       passwordCharacters.push(String.fromCharCode(characterCode));
     }
     return passwordCharacters.join("");
+
 };
 
 
 //Password Copy Button
- 
+console.log(resultDOM.innerText);
+
+
 copybtnDOM.addEventListener("click", () => {
     const textarea = document.createElement("textarea");
     const passwordToCopy = resultDOM.innerText;
@@ -63,7 +66,6 @@ copybtnDOM.addEventListener("click", () => {
     textarea.remove();
     alert("Password Copied to Clipboard");
 });
-
 
 
 // Checking the options that are selected and setting the password
@@ -80,4 +82,9 @@ form.addEventListener("submit", (e) => {
       includeSymbols
     );
     resultDOM.innerText = password;
+    if (resultDOM.innerText){
+      copybtnDOM.style.display = "block";
+    }else{
+      copybtnDOM.style.display = "none";
+    }
 });
