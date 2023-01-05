@@ -80,4 +80,10 @@ form.addEventListener("submit", (e) => {
       includeSymbols
     );
     resultDOM.innerText = password;
+    if(resultDOM.innerText){
+      copybtnDOM.style.display = "block";
+    }
+    else{
+      copybtnDOM.style.display = "none";
+    }
 });

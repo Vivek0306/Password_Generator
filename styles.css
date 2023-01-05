@@ -32,8 +32,11 @@ h2 {
     text-align: center;
     padding: 15px 0;
 }
-   
-   
+
+#copy{
+    display: none;
+}
+
 .option {
     display: flex;
     justify-content: space-between;
