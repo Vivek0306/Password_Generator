@@ -33,9 +33,7 @@ h2 {
     padding: 15px 0;
 }
    
-#copy{
-    display: none;
-}
+   
 .option {
     display: flex;
     justify-content: space-between;
